@@ -1,78 +1,57 @@
 import streamlit as st
-import mysql.connector
-
-# Conecte-se ao banco de dados MySQL
-cnx = mysql.connector.connect(user='root', 
-                              password='123456vc',
-                              host='localhost',
-                              database='bibliotech')
-
-# Crie um cursor
-cursor = cnx.cursor()
 
 def tela_inicial():
-    st.title("Bem-vindo ao nosso sistema de biblioteca")
-    opcao_tela = st.sidebar.selectbox("Escolha uma opção", ["Login", "Cadastro"])
-    if opcao_tela == "Login":
+    st.title("Bem-vindo à BiblioTech!")
+    
+    st.sidebar.header("Usuário")
+    opcao_usuario = st.sidebar.selectbox("", ["Login", "Cadastro"], key='user')
+    if opcao_usuario == "Login":
+        st.subheader("Login")
         login()
-    elif opcao_tela == "Cadastro":
+    elif opcao_usuario == "Cadastro":
+        st.subheader("Cadastro")
         cadastro()
+    
+    st.sidebar.header("Funcionalidades")
+    opcao_funcionalidade = st.sidebar.selectbox("", ["Alugar Livro", "Comprar Livro", "Ver Livros"], key='func')
+    if opcao_funcionalidade == "Alugar Livro":
+        st.subheader("Alugar Livro")
+        alugar_livro()
+    elif opcao_funcionalidade == "Comprar Livro":
+        st.subheader("Comprar Livro")
+        comprar_livro()
+    elif opcao_funcionalidade == "Ver Livros":
+        st.subheader("Seus Livros")
+        ver_livros()
+
+def login():
+    usuario = st.text_input("Nome de usuário")
+    senha = st.text_input("Senha", type="password")
+    if st.button("Entrar"):
+        # Aqui você pode adicionar a lógica para verificar o nome de usuário e a senha
+        pass
 
 def cadastro():
-    st.title("Cadastro")
     nome = st.text_input("Nome")
     telefone = st.text_input("Telefone")
     email = st.text_input("Email")
     cpf = st.text_input("CPF")
     endereco = st.text_input("Endereço")
-    if st.button("Cadastrar"):
-        # Aqui você pode adicionar a lógica para salvar as informações do usuário no banco de dados
-        query = "INSERT INTO usuarios (nome, telefone, email, cpf, endereco) VALUES (%s, %s, %s, %s, %s)"
-        cursor.execute(query, (nome, telefone, email, cpf, endereco))
-        cnx.commit()
-        st.success("Usuário cadastrado com sucesso!")
-
-# Página de login
-def login():
-    st.title("Login")
-    usuario = st.text_input("Usuário")
     senha = st.text_input("Senha", type="password")
-    if st.button("Entrar"):
-        # Verifique as credenciais do usuário
-        query = "SELECT * FROM usuarios WHERE usuario = %s AND senha = %s"
-        cursor.execute(query, (usuario, senha))
-        resultado = cursor.fetchone()
-        if resultado:
-            st.success("Entrou com sucesso")
-            menu_principal()
-        else:
-            st.error("Usuário ou senha inválidos")
+    if st.button("Cadastrar"):
+        # Aqui você pode adicionar a lógica para cadastrar o usuário
+        pass
 
-# Menu principal
-def reservar_livro():
-    st.title("Reservar um Livro")
-    nome_livro = st.text_input("Nome do Livro")
-    if st.button("Reservar"):
-        # Aqui você pode adicionar a lógica para reservar o livro no banco de dados
-        query = "UPDATE livros SET reservado = 1 WHERE nome = %s"
-        cursor.execute(query, (nome_livro,))
-        cnx.commit()
-        st.success("Livro reservado com sucesso!")
+def alugar_livro():
+    # Aqui você pode adicionar a lógica para alugar um livro
+    pass
 
-def menu_principal():
-    st.title("Menu Principal")
-    opcao_menu = st.sidebar.selectbox("Escolha uma opção", ["Reservar um livro", "Alugar um livro", "Comprar um livro", "Ver livros comprados ou alugados"])
-    if opcao_menu == "Reservar um livro":
-        reservar_livro()
-    elif opcao_menu == "Alugar um livro":
-        alugar_livro()
-    elif opcao_menu == "Comprar um livro":
-        comprar_livro()
-    elif opcao_menu == "Ver livros comprados ou alugados":
-        ver_livros()
+def comprar_livro():
+    # Aqui você pode adicionar a lógica para comprar um livro
+    pass
 
-# As funções reservar_livro, alugar_livro, comprar_livro e ver_livros precisam ser implementadas
-# ...
+def ver_livros():
+    # Aqui você pode adicionar a lógica para mostrar os livros do usuário
+    pass
 
-# Inicie o aplicativo na página de login
-login()
+tela_inicial()
