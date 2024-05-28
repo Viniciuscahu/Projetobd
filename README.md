@@ -44,7 +44,8 @@ Substitua `app.py` pelo nome do arquivo principal do seu sistema.
 8. Modelo Conceitual
 
 ![Captura de tela 2024-05-27 224312](https://github.com/Viniciuscahu/projetobd/assets/142367401/77c8d6e8-addb-4a24-a68e-51f27bdd938b)
-9. Modelo lógico
+9. 
+Modelo lógico
 
 ![Captura de tela 2024-05-27 224357](https://github.com/Viniciuscahu/projetobd/assets/142367401/11ceed90-343d-4509-a718-2d207a14e3f1)
 
