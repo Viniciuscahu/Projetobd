@@ -42,3 +42,7 @@ Substitua `app.py` pelo nome do arquivo principal do seu sistema.
 
 7. **Uso do BiblioTECH**: Utilize as funcionalidades do sistema conforme descrito na seção de funcionalidades principais do seu `README.md`.
 
+8. MAPA CONCEITUAL
+   ![Captura de tela 2024-05-27 224312](https://github.com/Viniciuscahu/projetobd/assets/142367401/061739aa-d881-44ac-80cb-6a205a72faa6)
+
+
