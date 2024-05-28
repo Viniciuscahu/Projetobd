@@ -41,8 +41,13 @@ Substitua `app.py` pelo nome do arquivo principal do seu sistema.
 6. **Acesso ao Sistema**: Abra seu navegador e acesse o endereço local fornecido pelo Streamlit, geralmente `http://localhost:8501`.
 
 7. **Uso do BiblioTECH**: Utilize as funcionalidades do sistema conforme descrito na seção de funcionalidades principais do seu `README.md`.
-8. ![Captura de tela 2024-05-27 224312](https://github.com/Viniciuscahu/projetobd/assets/142367401/77c8d6e8-addb-4a24-a68e-51f27bdd938b)
-9. ![Captura de tela 2024-05-27 224357](https://github.com/Viniciuscahu/projetobd/assets/142367401/11ceed90-343d-4509-a718-2d207a14e3f1)
+8. 
+![Captura de tela 2024-05-27 224312](https://github.com/Viniciuscahu/projetobd/assets/142367401/77c8d6e8-addb-4a24-a68e-51f27bdd938b)
+9.
+![Captura de tela 2024-05-27 224357](https://github.com/Viniciuscahu/projetobd/assets/142367401/11ceed90-343d-4509-a718-2d207a14e3f1)
+
+
+
 
 
 
