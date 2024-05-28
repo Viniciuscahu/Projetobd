@@ -43,11 +43,13 @@ Substitua `app.py` pelo nome do arquivo principal do seu sistema.
 7. **Uso do BiblioTECH**: Utilize as funcionalidades do sistema conforme descrito na seção de funcionalidades principais do seu `README.md`.
 8. Modelo Conceitual
 
-![Captura de tela 2024-05-27 224312](https://github.com/Viniciuscahu/projetobd/assets/142367401/77c8d6e8-addb-4a24-a68e-51f27bdd938b)
+![Captura de tela 2024-05-27 233826](https://github.com/Viniciuscahu/projetobd/assets/142367401/b8be7ea1-bee6-4c50-81d1-314ff7b67b8a)
+
 9. 
 Modelo lógico
 
-![Captura de tela 2024-05-27 224357](https://github.com/Viniciuscahu/projetobd/assets/142367401/11ceed90-343d-4509-a718-2d207a14e3f1)
+![Captura de tela 2024-05-27 233843](https://github.com/Viniciuscahu/projetobd/assets/142367401/eb5d49bf-7f17-4ea7-aac2-502d10837f38)
+
 
 
 
