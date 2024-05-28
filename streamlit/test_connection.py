@@ -5,7 +5,7 @@ def test_connection():
     st.title("Teste de Conexão")
     try:
         cnx = mysql.connector.connect(user='root',
-                                      password='123456vc',
+                                      password='1234vc',
                                       host='localhost',
                                       database='bibliotech')
         if cnx.is_connected():
