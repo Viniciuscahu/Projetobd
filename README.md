@@ -10,7 +10,7 @@ BiblioTECH é um sistema de gerenciamento de bibliotecas desenvolvido como parte
 
 ## Funcionalidades Principais
 - 📖 **Gerenciamento de Livros**: Cadastro, edição, filtragem, adição ao carrinho, compra e exclusão de livros.
-- - 📖 **Avaliação de Livros**: Opção de avaliação de livros e aba onde são exibidos os livros mais bem avaliados.
+- 🏆 **Avaliação de Livros**: Opção de avaliação de livros e aba onde são exibidos os livros mais bem avaliados.
 - 👤 **Gerenciamento de Usuários**: Cadastro de usuário.
 - 🔍 **Busca Avançada**: Ferramenta de busca eficiente por título, ano, autor, preço.
 
